@@ -1,0 +1,44 @@
+# Patch string format
+# FileGuid SectionType PatchType:FindPatternOrOffset:ReplacePattern 
+# Please ensure that the latest symbol in patch string is space
+
+# Possible section types:
+#  PE32 image                    10
+#  Position-independent code     11
+#  TE Image                      12
+#  DXE Dependency                13
+#  Version information           14
+#  User interface string         15
+#  16-bit code                   16
+#  Guided freeform               18
+#  Raw data                      19
+#  PEI Dependency                1B
+#  SMM Dependency                1C
+
+# 1vyrain patches. read before use. dont be dumb
+
+# AdvancedMenu By leokim |  
+32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 O:02A0:778B1D826D24964E8E103467D56AB1BA 
+
+# PowerManagement2 | 0x194 unlock/OC enable test |
+F7731B4C-58A2-4DF4-8980-5645D39ECE58 10 P:44243080fb0175080fbae80f89442430:44243080fb01eb080fbae80f89442430 
+F7731B4C-58A2-4DF4-8980-5645D39ECE58 10 P:30488b4338f6000874080fba6c243014:30488b4338f60008eb080fba6c243014 
+
+# LenovoWmaPolicyDxe | WL removal | ripped from dudu2002 | W530 2.76 / T530 2.77 / T430 2.82 / x230 2.77
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:C8390F0F84:C8390F90E9 
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:C8390F7516:C8390F7500 
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:C8394F0474:C8394F04EB 
+
+
+# LenovoWmaPolicyDxe | WL removal | \x | x230t (x230 Tablet) 2.75
+# uncomment to use
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390C240F84:41390C2490E9 
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390C240F858D:41390C240F8500 
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41394C24047577:41394C24047500 
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:413AED0F8497FEFFFF:413AED0F8400000000
+
+
+# PlatformHiiAdvancedDxe | 1066 fix | \x | xx30 thinkpads | change 1066 to another auto to stop bricking
+CFEF94C4-4167-466A-8893-8779459DFA86 10 P:090E680101010100000000000000:090E9C0001010000000000000000                
+
+

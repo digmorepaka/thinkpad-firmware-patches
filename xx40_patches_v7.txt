@@ -1,0 +1,67 @@
+# Patch string format
+# FileGuid SectionType PatchType:FindPatternOrOffset:ReplacePattern 
+# Please ensure that the latest symbol in patch string is space
+
+# Possible section types:
+#  PE32 image                    10
+#  Position-independent code     11
+#  TE Image                      12
+#  DXE Dependency                13
+#  Version information           14
+#  User interface string         15
+#  16-bit code                   16
+#  Guided freeform               18
+#  Raw data                      19
+#  PEI Dependency                1B
+#  SMM Dependency                1C
+# Please do not try another section types, it can make the resulting image broken
+
+# Possible patch types:
+#  P - pattern-based, first parameter is a pattern to find, second - a pattern to replace
+#  O - offset-based, first parameter is hexadecimal offset, second - a pattern to replace
+# Patterns can have . as "any possible value" symbol
+
+
+# for xx40 thinkpads. no warranties. do not use if dumb - \x
+# paranoidbashthot's LNVBBSEC method might help with the beeps on U processors - 's/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFB\xFF/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFF\xFF/g'
+
+# LenovoWmaPolicyDxe | Whitelist removal | T440p W540 T540
+# https://github.com/thrimbor/thinkpad-uefi-patches/
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:0bc841390b0f8468010000:0bc841390be96901000000      
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390b7517:41390b7500  
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41394b04741b:41394b04eb1b  
+
+
+# LenovoWmaPolicyDxe | Whitelist removal | W541 | \x
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390B0F8469010000:41390BE96A01000000      
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390b7517:41390b7500  
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41394b04741b:41394b04eb1b  
+
+
+# LenovoWmaPolicyDxe | Whitelist removal | L540 1.93 test1 | \x
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:0BC841390B0F8438010000:0BC841390B90E938010000         
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390b7517:41390b7500        
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41394B04741C:41394B04EB1C          
+
+
+# LenovoWmaPolicyDxe | Whitelist removal | T440 2.41 test1 | \x
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390C240F8466010000:41390C2490E966010000    
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390C247516:41390C247500    
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41394C2404741B:41394C2404EB1B   
+
+
+# SystemFormBrowserCoreDxe | advanced menu enable | \x
+32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 P:04320B483CC2E14ABB16A73FADDA475F:778B1D826D24964E8E103467D56AB1BA      
+
+
+# enable the bottom patches only for a mem overclocker
+
+#PlatformHiiAdvancedDxe | show XMP and manual memory timings | \x
+#CFEF94C4-4167-466A-8893-8779459DFA86 10 P:4084EC00450A0200000000000000:4084EC00450A0100000000000000   
+#CFEF94C4-4167-466A-8893-8779459DFA86 10 P:4084EC00450A0300000000000000:4084EC00450A0100000000000000     
+#CFEF94C4-4167-466A-8893-8779459DFA86 10 P:450A0300000000000000300240043C27450A0300000000000000:450A0100000000000000300240043C27450A0100000000000000   
+
+
+#PlatformHiiAdvancedDxe | show XMP and manual memory timings (cleaned up)| \x
+#CFEF94C4-4167-466A-8893-8779459DFA86 10 P:4084EC00450A0300000000000000:4084EC00450A0100000000000000     
+#CFEF94C4-4167-466A-8893-8779459DFA86 10 P:450A0300000000000000300240043C27450A030000000000000030021502:450A0100000000000000300240043C27450A010000000000000030021602    

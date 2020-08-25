@@ -1,0 +1,47 @@
+# Patch string format
+# FileGuid SectionType PatchType:FindPatternOrOffset:ReplacePattern 
+# Please ensure that the latest symbol in patch string is space
+
+# Possible section types:
+#  PE32 image                    10
+#  Position-independent code     11
+#  TE Image                      12
+#  DXE Dependency                13
+#  Version information           14
+#  User interface string         15
+#  16-bit code                   16
+#  Guided freeform               18
+#  Raw data                      19
+#  PEI Dependency                1B
+#  SMM Dependency                1C
+# Please do not try another section types, it can make the resulting image broken
+
+# Possible patch types:
+#  P - pattern-based, first parameter is a pattern to find, second - a pattern to replace
+#  O - offset-based, first parameter is hexadecimal offset, second - a pattern to replace
+# Patterns can have . as "any possible value" symbol
+
+# works with paranoidbashthot's bypass method, 's/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFB\xFF/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFF\xFF/g'
+# all patches by \x unless stated, no warranties.
+
+# SystemFormBrowserCoreDxe | enable advance menu Lenovo xx70/xx80 
+721C8B66-426C-4E86-8E99-3457C46AB0B9 10 P:04320b483cc2e14abb16a73fadda475f:778b1d826d24964e8e103467d56ab1ba  
+32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 P:04320b483cc2e14abb16a73fadda475f:778b1d826d24964e8e103467d56ab1ba  
+
+
+# Setup | Lenovo Thinkpad xx70/xx80 | igpu add oc options. 1250, 1300, 1350, 1400. removes 100, 150, 200, 250
+E6A7A1CE-5881-4B49-80BE-69C91811685C 10 P:09072C1300000209072D1300000309072E1300000409072F13000005:09072C1300001909072D1300001A09072E1300001B09072F1300001C     
+E6A7A1CE-5881-4B49-80BE-69C91811685C 10 P:00143100300030004D0068007A000000143100350030004D0068007A000000143200300030004D0068007A000000143200350030004D0068007A:00143100320035003000200020000000143100330030003000200020000000143100330035003000200020000000143100340030003000200020     
+
+
+# Setup | Lenovo Thinkpad xx70/xx80 | enable LCDControl
+E6A7A1CE-5881-4B49-80BE-69C91811685C 10 P:0A821286A10B04001206A60B010016021206A60B020016022902:0A821286A10B04001206A60B000016021206A60B000016022902         
+
+
+# LenovoWmaPolicyDxe | Lenovo Thinkpad xx70/xx80 | remove wwan whitelist
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:0BC8394B040F8437020000:0BC8394B04E93802000000      
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:C8390B7516:C8390B7500           
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:ECA8047404:ECA804EB04   
+
+
+    
