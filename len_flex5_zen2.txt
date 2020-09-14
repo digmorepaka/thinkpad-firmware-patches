@@ -1,0 +1,33 @@
+# Patch string format
+# FileGuid SectionType PatchType:FindPatternOrOffset:ReplacePattern 
+# Please ensure that the latest symbol in patch string is space
+
+# Possible section types:
+#  PE32 image                    10
+#  Position-independent code     11
+#  TE Image                      12
+#  DXE Dependency                13
+#  Version information           14
+#  User interface string         15
+#  16-bit code                   16
+#  Guided freeform               18
+#  Raw data                      19
+#  PEI Dependency                1B
+#  SMM Dependency                1C
+# Please do not try another section types, it can make the resulting image broken
+
+# Possible patch types:
+#  P - pattern-based, first parameter is a pattern to find, second - a pattern to replace
+#  O - offset-based, first parameter is hexadecimal offset, second - a pattern to replace
+# Patterns can have . as "any possible value" symbol
+
+
+# Lenovo Flex 5 
+# patches by \x. No warranties. 
+
+
+# OilConfigurationDxe | show up "Hidden Page" toggle | enables "Engineering mode" | \x
+F2CDF4CF-398D-459D-98CE-A925CAD02194 10 P:0A82450A010000000000000005911800190017000100030000100001005B06000000015B06010000015B060EF40001090705000000000907060000000129022902:05911800190017000100030000100001005B06000000015B06010000015B060EF40001090705000000000907060000000129020A82450A01000000000000002902
+
+
+#
