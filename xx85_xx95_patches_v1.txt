@@ -24,11 +24,11 @@
 # works with paranoidbashthot's bypass method, 's/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFB\xFF/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFF\xFF/g'
 # all patches by \x unless stated, no warranties.
 
-# SystemFormBrowserCoreDxe | enable 'AMD' menu | AMD PBS and CBS | Lenovo x395 
+# SystemFormBrowserCoreDxe | enable 'AMD' menu | AMD PBS and CBS | Lenovo x395 T495s A285
 721C8B66-426C-4E86-8E99-3457C46AB0B9 10 P:04320b483cc2e14abb16a73fadda475f:778B1D826D24964E8E103467D56AB1BC     
 32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 P:04320b483cc2e14abb16a73fadda475f:778B1D826D24964E8E103467D56AB1BC     
 
 
-# LenovoWmaPolicyDxe | remove wwan whitelist | Lenovo x395
+# LenovoWmaPolicyDxe | remove wwan whitelist | Lenovo x395 T495s 
 79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:0183F8070F8438020000:0183F807E9DD01000000       
 79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:83F802752A:83F8027500   
