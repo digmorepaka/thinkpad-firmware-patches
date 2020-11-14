@@ -17,7 +17,7 @@
 
 # 1vyrain patches. read before use. dont be dumb
 
-# AdvancedMenu By leokim |  
+# AdvancedMenu By leokim |  W530 / T530 / T430 / x230 / T430s / X230t / X131e
 32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 O:02A0:778B1D826D24964E8E103467D56AB1BA 
 
 # PowerManagement2 | 0x194 unlock/OC enable test |
