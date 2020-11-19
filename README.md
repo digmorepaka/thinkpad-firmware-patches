@@ -11,13 +11,14 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 
 | Model/Series | Supported | Notes | TPM |
 | --- | --- | --- | --- |
-| T430 | Yes | N/A | Yes |
-| T530 | Yes | N/A | Yes |
-| T430s | Yes | N/A | Yes |
-| W530 | Yes | N/A | Yes |
-| X230 | Yes | N/A | Yes|
-| X230t | Yes | Different Whitelist patch | Yes |
+| T430 | Yes | Internal flash | Yes |
+| T530 | Yes | Internal flash | Yes |
+| T430s | Yes | Internal flash | Yes |
+| W530 | Yes | Internal flash | Yes |
+| X230 | Yes | Internal flash | Yes|
+| X230t | Yes | Different Whitelist patch, Internal flash | Yes |
 | X131e | Yes | Different Whitelist patch | ? |
+| L430/L530 | WIP | Shared board and firmware, Internal flash | ? |
 | X1C1 | ? | N/A | Yes |
 | T440p | Yes | N/A | Yes |
 | W540/W541 | Yes | Different stock trackpad and PS/2 ID | Yes |
@@ -27,34 +28,34 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | X240 | ? | N/A | No |
 | X1C2 | ? | N/A | No |
 | L540 | Yes | N/A | ? |
-| L440 | Probably | L540 and L440 share firmware | ? |
+| L440 | Probably | Shared firmware with L540 | ? |
 | T450s | Yes | N/A | No |
 | T450 | Probably | N/A | No |
-| T550/W550s | Probably | N/A | No |
+| T550/W550s | Probably | Shared board | No |
 | X250 | ? | N/A | No |
 | X1C3 | ? | N/A | No |
 | T460 | Yes | N/A | No |
 | T460s | Probably | N/A | No |
-| T560/P50s | No | N/A | No |
+| T560/P50s | No | Shared board | No |
 | X260 | ? | N/A | No |
 | X1C4 | ? | N/A | No |
 | T470 | Yes | N/A | No |
 | T470s | Probably | N/A | No |
-| T570/P51s | Probably | N/A | No |
+| T570/P51s | Probably | Shared board | No |
 | X270 | ? | N/A | No |
 | X1C5 | ? | N/A | No |
 | T480 | Yes | N/A | No |
 | A485 | Probably | N/A | Yes |
 | A285 | Yes | N/A | Yes |
 | T480s | Probably | N/A | No |
-| T580/P52s | Probably | N/A | No |
+| T580/P52s | Probably | Shared board | No |
 | X280 | ? | N/A | No |
 | X1C6 | Yes | N/A | No |
-| T490/T590/P43s/P53s | No | N/A | ? |
+| T490/T590/P43s/P53s | No | Shared board | ? |
 | T495 | Probably | N/A | Yes |
-| T490s/X390 | No | N/A | ? |
-| T495s/X395 | Yes | N/A | Yes |
-| X1C7/X1C8 | No | N/A | No |
+| T490s/X390 | No | Shared board | ? |
+| T495s/X395 | Yes | Shared board | Yes |
+| X1C7/X1C8 | No | Believed to be shared board | No |
 
 ## Reporting comaptibility
 
