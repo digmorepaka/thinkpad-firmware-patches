@@ -77,10 +77,6 @@ Open a pull request with the patchset added and the following table in comment:
 | TPM | Haven't tested |
 | Notes | Different whitelist patch | 
 
-## What does it mean "TPM yes?", or "Internal flash".. etc
-
-Check out [this comment](https://github.com/digmorepaka/thinkpad-firmware-patches/issues/3#issuecomment-730474066) for clarification on TPM and Internal flashing.
-
 
 Patches are standard UEFIPatch format, mention what it does, what machine it is for, who made it(your name if you did, if you found it on a forum mention OP's name) for special patchsets make sure they are uncommented by default. Example:
 
@@ -92,6 +88,12 @@ Patches are standard UEFIPatch format, mention what it does, what machine it is 
 #79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:100BC841394B0474:100BC841394B04EB 
 #79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:0F846CFFFFFFEBAF:9090909090909090
 ```
+
+
+## What does it mean "TPM yes?", or "Internal flash".. etc
+
+Check out [this comment](https://github.com/digmorepaka/thinkpad-firmware-patches/issues/3#issuecomment-730474066) for clarification on TPM and Internal flashing.
+
 
 ### Credits
 
