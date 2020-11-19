@@ -56,6 +56,37 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | T495s/X395 | Yes | N/A | Yes |
 | X1C7/X1C8 | No | N/A | No |
 
+## Reporting comaptibility
+
+Open a new issue with the following table:
+
+| Model | T430 |
+| --- | --- |
+| Patchset | Default for generation |
+| TPM | Yes, thinkpad-uefi-sign |
+| Notes | DDR3-1066/800 speed limiter makes machine unbootable and is a non-volatile setting | 
+
+
+## Submitting patchset
+
+Open a pull request with the patchset added and the following table in comment:
+
+| Model | X131e |
+| --- | --- |
+| TPM | Haven't tested |
+| Notes | Different whitelist patch | 
+
+Patches are standard UEFIPatch format, mention what it does, what machine it is for, who made it(your name if you did, if you found it on a forum mention OP's name) for special patchsets make sure they are uncommented by default. Example:
+
+```
+# LenovoWmaPolicyDxe | WL removal | ripped from nephiel | x131e 3.01
+# uncomment to use
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:100BC841390B0F84:100BC841390B90E9 
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:00000045390B0F84:00000045390B90E9 
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:100BC841394B0474:100BC841394B04EB 
+#79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:0F846CFFFFFFEBAF:9090909090909090
+```
+
 ### Credits
 
 xx
