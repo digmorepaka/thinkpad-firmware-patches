@@ -25,7 +25,7 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | T540p | Yes | N/A | Yes |
 | T440 | Yes | N/A | No |
 | T440s | Yes | N/A | No |
-| X240 | ? | N/A | No |
+| X240 | Yes | N/A | No |
 | X1C2 | ? | N/A | No |
 | L540 | Yes | N/A | ? |
 | L440 | Probably | Shared firmware with L540 | ? |
