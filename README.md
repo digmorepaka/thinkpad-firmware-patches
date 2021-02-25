@@ -42,7 +42,7 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | T470 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
 | T470s | Probably | N/A | No |
 | T570/P51s | Probably | Shared board | No |
-| X270 | ? | N/A | No |
+| X270 | Yes | N/A | No |
 | X1C5 | ? | N/A | No |
 | T480 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
 | A485 | Probably | N/A | Yes |
