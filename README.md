@@ -58,7 +58,7 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | T495s/X395 | Yes | Shared board | Yes |
 | X1C7 | No | N/A | No |
 | T14/T15/P14s/P15s Intel 1st gen | No | Shared board | ? |
-| T14/P14s AMD 1st gen | No | Shared Board | ? |
+| T14/P14s AMD 1st gen | Testing needed | Shared Board | ? |
 | T14s/X13 Intel 1st gen | No | Shared board | ? |
 | T14s/X13 AMD 1st gen | No | Shared board | ? |
 | X1C8 | No | N/A | No |
