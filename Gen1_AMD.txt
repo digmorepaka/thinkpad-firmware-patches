@@ -1,7 +1,7 @@
 # Patch string format
 # FileGuid SectionType PatchType:FindPatternOrOffset:ReplacePattern 
 # Please ensure that the latest symbol in patch string is space
-
+ 
 # Possible section types:
 #  PE32 image                    10
 #  Position-independent code     11
@@ -15,20 +15,24 @@
 #  PEI Dependency                1B
 #  SMM Dependency                1C
 # Please do not try another section types, it can make the resulting image broken
-
+ 
 # Possible patch types:
 #  P - pattern-based, first parameter is a pattern to find, second - a pattern to replace
 #  O - offset-based, first parameter is hexadecimal offset, second - a pattern to replace
 # Patterns can have . as "any possible value" symbol
-
+ 
 # works with paranoidbashthot's bypass method, 's/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFB\xFF/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFF\xFF/g'
 # all patches by \x unless stated, no warranties.
-
-
-
-# PlatformHiiAMD | AMD CBS and PBS menu | Lenovo T14A1 UNTESTED | by \x
-721C8B66-426C-4E86-8E99-3457C46AB0B9 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3           
-32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3
-
-# LenovoWmaPolicyDxe | wwan whitelist | Lenovo T14A1 UNTESTED | by \x
-79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:7407E8890B0000:EB0CE8890B000
+# untested as of 07062021
+ 
+# SystemFormBrowserCoreDxe | enable 'AMD' menu | AMD PBS and CBS | Lenovo T14
+# use classic view, not metroUI
+721C8B66-426C-4E86-8E99-3457C46AB0B9 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3         
+32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3       
+ 
+# LenovoWmaPolicyDxe | remove wwan whitelist | Lenovo T14
+# very very untested
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:7407E8890B0000:EB0CE8890B0000    
+ 
+ 
+#
