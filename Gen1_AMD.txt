@@ -21,18 +21,25 @@
 #  O - offset-based, first parameter is hexadecimal offset, second - a pattern to replace
 # Patterns can have . as "any possible value" symbol
  
-# works with paranoidbashthot's bypass method, 's/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFB\xFF/\x4C\x4E\x56\x42\x42\x53\x45\x43\xFF\xFF/g'
+# test1
 # all patches by \x unless stated, no warranties.
-# untested as of 07062021
+# untested as of 13082021
  
+
+#LenovoMfgDoneDxe | protection bypass test 1
+93E18521-9E52-4EEB-A230-7C24B2EC03E8 10 P:790F48B80E:E9AB020000    
+
+#SystemFormBrowserMetroViewDxe | enable 'AMD' menu on metroUI | AMD PBS and CBS | Lenovo T14
+C7351A96-9215-4026-BCBD-12D6E7DB36E9 10 P:64FEC13DB537F64B9BCF4F0689299E53:92C3454EE23234418FB006E7390F22F3    
+
+# or
+
 # SystemFormBrowserCoreDxe | enable 'AMD' menu | AMD PBS and CBS | Lenovo T14
 # use classic view, not metroUI
-721C8B66-426C-4E86-8E99-3457C46AB0B9 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3         
-32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3       
- 
-# LenovoWmaPolicyDxe | remove wwan whitelist | Lenovo T14
-# very very untested
-79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:7407E8890B0000:EB0CE8890B0000    
- 
- 
+#721C8B66-426C-4E86-8E99-3457C46AB0B9 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3         
+#32442D09-1D11-4E27-8AAB-90FE6ACB0489 10 P:04320b483cc2e14abb16a73fadda475f:92C3454EE23234418FB006E7390F22F3       
+
+
+
+
 #
