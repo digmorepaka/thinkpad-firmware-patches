@@ -45,11 +45,12 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | X270 | Yes | N/A | No |
 | X1C5 | ? | N/A | No |
 | T480 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
-| A485 | Probably | N/A | Yes |
+| A485 | Yes | N/A | Yes |
 | A285 | Yes | N/A | Yes |
 | T480s | Yes | N/A | No |
 | T580/P52s | Probably | Shared board | No |
-| X280 | ? | N/A | No |
+| X280 | Probably | N/A | No |
+| X380Y | Yes | N/A | No |
 | X1C6 | Yes | Don't touch memory settings | No |
 | X1Y2 | Yes | Flash chip near LTE card, Don't touch memory settings | No |
 | T490/T590/P43s/P53s | No | Shared board | ? |
