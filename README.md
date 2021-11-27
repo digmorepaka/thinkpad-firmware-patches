@@ -18,7 +18,7 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | X230 | Yes | Internal flash | Yes|
 | X230t | Yes | Different Whitelist patch, Internal flash | Yes |
 | X131e | Yes | Different Whitelist patch | ? |
-| L430/L530 | WIP | Shared board and firmware, Internal flash | ? |
+| L430/L530 | Yes | Shared board and firmware, Internal flash | Yes |
 | X1C1 | ? | N/A | Yes |
 | T440p | Yes | N/A | Yes |
 | W540/W541 | Yes | Different stock trackpad and PS/2 ID | Yes |
