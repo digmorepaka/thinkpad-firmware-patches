@@ -69,7 +69,7 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | T14s/X13 AMD 2nd gen | No | Shared board | ? |
 | X1C9 | No | N/A | No |
 
-## Reporting comaptibility
+## Reporting compatibility
 
 Open a new issue with the following table:
 
