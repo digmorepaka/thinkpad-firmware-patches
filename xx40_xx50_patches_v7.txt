@@ -28,8 +28,12 @@
 # LenovoWmaPolicyDxe | Whitelist removal | T440p W540 T540
 # https://github.com/thrimbor/thinkpad-uefi-patches/
 79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:0bc841390b0f8468010000:0bc841390be96901000000      
+# bypass the PCI vendor ID check
 79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390b7517:41390b7500  
+# bypass the PCI subsys ID check
 79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41394b04741b:41394b04eb1b  
+# bypass the USB vendor ID check
+79E0EDD7-9D1D-4F41-AE1A-F896169E5216 10 P:41390B0F8469010000:41390B48E969010000  
 
 
 # LenovoWmaPolicyDxe | Whitelist removal | W541 | \x
