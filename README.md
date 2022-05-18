@@ -54,7 +54,7 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | X1C6 | Yes | Don't touch memory settings | No |
 | X1Y2 | Yes | Flash chip near LTE card, Don't touch memory settings | No |
 | T490/T590/P43s/P53s | No | Shared board | ? |
-| T495 | Probably | N/A | Yes |
+| T495 | Yes | 1.8V flash, in-system programming is problematic | Yes |
 | T490s/X390 | No | Shared board | ? |
 | T495s/X395 | Yes | Shared board | Yes |
 | X1C7 | No | N/A | No |
