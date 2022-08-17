@@ -17,6 +17,7 @@ To get a working TPM use [Thrimbor's uefi-sign](https://github.com/thrimbor/thin
 | W530 | Yes | Internal flash | Yes |
 | X230 | Yes | Internal flash | Yes|
 | X230t | Yes | Different Whitelist patch, Internal flash | Yes |
+| S230u | Yes | Internal flash | Yes |
 | X131e | Yes | Different Whitelist patch | ? |
 | L430/L530 | Yes | Shared board and firmware, Internal flash | Yes |
 | X1C1 | ? | N/A | Yes |
