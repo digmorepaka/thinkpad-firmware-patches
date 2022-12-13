@@ -46,6 +46,7 @@
 | T560/P50s | No | Shared board | No |
 | X260 | Yes | N/A | No |
 | X1C4 | ? | N/A | No |
+| X260 | Yes | N/A | No |
 | T470 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
 | T470s | Yes | N/A | No |
 | T570/P51s | Probably | Shared board | No |
