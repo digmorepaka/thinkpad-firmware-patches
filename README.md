@@ -33,9 +33,9 @@
 | T440 | Yes | N/A | No |
 | T440s | Yes | N/A | No |
 | X240 | Yes | N/A | No |
-| X1C2 | ? | N/A | No |
+| X1C2 | Yes | N/A | No |
 | L540 | Yes | N/A | ? |
-| L440 | Probably | Shared firmware with L540 | ? |
+| L440 | Yes | Shared firmware with L540 | ? |
 | T450s | Yes | N/A | No |
 | T450 | Probably | N/A | No |
 | T550/W550s | Probably | Shared board | No |
@@ -43,24 +43,28 @@
 | X1C3 | ? | N/A | No |
 | T460 | Yes | N/A | No |
 | T460s | Probably | N/A | No |
-| T560/P50s | No | Shared board | No |
+| T560/P50s | Yes | Shared board | No |
 | X260 | Yes | N/A | No |
 | X1C4 | ? | N/A | No |
 | Yoga 460 | Yes | N/A | No |
+| TP13-1 | Yes | WLAN untested | No |
 | T470 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
 | T470s | Yes | N/A | No |
 | T570/P51s | Probably | Shared board | No |
+| T570/P51s | Yes | USB wwan whitelist version | No |
 | X270 | Yes | N/A | No |
 | X1C5 | ? | N/A | No |
 | T480 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
 | A485 | Yes | N/A | Yes |
 | A285 | Yes | N/A | Yes |
 | T480s | Yes | N/A | No |
-| T580/P52s | Probably | Shared board | No |
-| X280 | Probably | N/A | No |
+| T580/P52s | Yes | Shared board | No |
+| P52 | Yes | N/A | No |
+| X280 | Yes | N/A | No |
 | X380Y | Yes | N/A | No |
 | X1C6 | Yes | Don't touch memory settings | No |
 | X1Y2 | Yes | Flash chip near LTE card, Don't touch memory settings | No |
+| TP11e-6 | Yes | N/A | No |
 | T490/T590/P43s/P53s | No | Shared board | ? |
 | T495 | Yes | 1.8V flash, in-system programming is problematic | Yes |
 | T490s/X390 | No | Shared board | ? |
