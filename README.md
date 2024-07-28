@@ -44,14 +44,15 @@
 | T460 | Yes | N/A | No |
 | T460s | Probably | N/A | No |
 | T560/P50s | Yes | Shared board | No |
+| P50 | Yes | N/A | No |
 | X260 | Yes | N/A | No |
 | X1C4 | ? | N/A | No |
 | Yoga 460 | Yes | N/A | No |
 | TP13-1 | Yes | WLAN untested | No |
 | T470 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
 | T470s | Yes | N/A | No |
-| T570/P51s | Probably | Shared board | No |
 | T570/P51s | Yes | USB wwan whitelist version | No |
+| P51 | Yes | N/A | No |
 | X270 | Yes | N/A | No |
 | X1C5 | ? | N/A | No |
 | T480 | Yes | Flash chip next to SOC, Don't touch memory settings | No |
