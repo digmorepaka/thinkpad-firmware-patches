@@ -13,6 +13,12 @@
   - For soldered xx40 and onwards replace `4C 4E 56 42 42 53 45 43 FB` with `4C 4E 56 42 42 53 45 43 FF` on the previously patched binary with a hex editor such as [HxD](https://mh-nexus.de/en/hxd/) or [wxHexEditor](https://www.wxhexeditor.org/)
 5. Flash back your successfully patched binary
 
+
+
+## xx50 LCD
+[https://github.com/digmorepaka/thinkpad-firmware-patches/tree/master/xx50-lcd](Guide)
+
+
 ## Compatibility WIP
 
 | Model/Series | Supported | Notes | TPM |
