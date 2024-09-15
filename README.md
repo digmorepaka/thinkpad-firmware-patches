@@ -16,7 +16,7 @@
 
 
 ## xx50 LCD
-[https://github.com/digmorepaka/thinkpad-firmware-patches/tree/master/xx50-lcd](Guide)
+[./xx50-lcd](https://github.com/digmorepaka/thinkpad-firmware-patches/tree/master/xx50-lcd)
 
 
 ## Compatibility WIP
