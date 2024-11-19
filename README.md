@@ -70,9 +70,11 @@
 | X280 | Yes | N/A | No |
 | X380Y | Yes | N/A | No |
 | X1C6 | Yes | Don't touch memory settings | No |
+| X1 Tablet Gen 3 | Yes | Internal Flash | Yes | 
 | X1Y2 | Yes | Flash chip near LTE card, Don't touch memory settings | No |
 | TP11e-6 | Yes | N/A | No |
 | T490/T590/P43s/P53s | No | Shared board | ? |
+| L390 Yoga | Yes | Internal Flash | Yes |
 | T495 | Yes | 1.8V flash, in-system programming is problematic | Yes |
 | T490s/X390 | No | Shared board | ? |
 | T495s/X395 | Yes | Shared board | Yes |
@@ -87,8 +89,6 @@
 | T14s/X13 Intel 2nd gen | No | Shared board | ? |
 | T14s/X13 AMD 2nd gen | No | Shared board | ? |
 | X1C9 | No | N/A | No |
-| X1 Tablet Gen 3 | Yes | Internal Flash | Yes | 
-| L390 Yoga | Yes | Internal Flash | Yes |
 
 ## Reporting compatibility
 
