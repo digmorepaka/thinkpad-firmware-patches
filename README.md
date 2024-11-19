@@ -88,6 +88,7 @@
 | T14s/X13 AMD 2nd gen | No | Shared board | ? |
 | X1C9 | No | N/A | No |
 | X1 Tablet Gen 3 | Yes | Internal Flash | Yes | 
+| L390 Yoga | Yes | Internal Flash | Yes |
 
 ## Reporting compatibility
 
